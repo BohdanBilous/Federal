@@ -1,0 +1,341 @@
+/* =========================
+   Fonts
+   =========================*/
+.text-sm {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Elektra_Text_Pro";
+  letter-spacing: 0.4px;
+}
+
+.text-b {
+  text-transform: uppercase;
+  color: #283D4E;
+  letter-spacing: 0.5px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+.list li {
+  padding: 0;
+  margin: 0;
+  line-height: 14px;
+  font-size: 12px;
+  color: #000;
+}
+.list li:before {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  display: none;
+  background: none;
+}
+
+.ps, q:before, ul > li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+body {
+  font: normal 12px Verdana, Helvetica;
+  color: #271309;
+  background: #fff;
+  line-height: 1;
+  -ms-overflow-style: scrollbar;
+}
+
+body * {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+}
+
+h1, h2, h3, h4, h5, .h1, .h2 {
+  color: #283D4E;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-family: "Elektra_Light_Pro";
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h2, .h2 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #C72529;
+  text-transform: none;
+}
+
+h5 {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+a {
+  color: #C72529;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (max-width: 1023px) {
+  p {
+    margin-bottom: 16px;
+  }
+}
+
+q {
+  display: block;
+  position: relative;
+  color: #C72529;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 30px;
+  padding-left: 23px;
+  margin-bottom: 38px;
+}
+q:before {
+  width: 1px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #C72529;
+}
+@media (max-width: 1023px) {
+  q {
+    margin-left: 0;
+    margin-bottom: 26px;
+  }
+}
+
+.prod-name {
+  display: block;
+  font-size: 14px;
+  color: #7C7C7C;
+  line-height: 20px;
+  text-decoration: none;
+}
+.prod-name:hover {
+  color: #283D4E;
+  text-decoration: underline;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 10px 20px;
+}
+
+img.aligncenter {
+  display: block;
+  margin: auto;
+}
+
+img.size-full {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  img.alignleft, img.alignright, img.aligncenter {
+    float: none;
+    width: 100%;
+    height: auto !important;
+    margin: 0 0 15px !important;
+  }
+}
+ul, ol {
+  list-style: none;
+  margin-bottom: 16px;
+  list-style: none;
+  overflow: auto;
+  overflow-y: hidden;
+  margin-left: 0;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+}
+ul li, ol li {
+  position: relative;
+  padding: 0 0 0 25px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+ul > li ul {
+  margin-left: 20px;
+  padding: 13px 0 0;
+}
+ul > li ul > li {
+  margin-bottom: 6px;
+}
+ul > li ul > li:before {
+  background-color: #979797;
+}
+
+ul > li:before {
+  left: 0;
+  top: 11px;
+  width: 10px;
+  height: 5px;
+  background: #C72529;
+  left: 1px;
+}
+@media (max-width: 1023px) {
+  ul > li {
+    padding-left: 21px;
+  }
+  ul > li:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+  }
+}
+
+ol {
+  counter-reset: li;
+  margin: 0 0 25px 0;
+  padding-left: 25px;
+}
+ol > li {
+  position: relative;
+  list-style: decimal;
+  counter-increment: li;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 19px;
+}
+ol > li:before {
+  content: counter(li);
+  position: absolute;
+  top: 3px;
+  left: -25px;
+  width: 23px;
+  height: 21px;
+  font-size: 14px;
+  background: #fff;
+  line-height: 20px;
+  color: #C72529;
+  font-family: "Elektra_Text_Pro";
+}
+ol ul, ol ol {
+  padding-top: 19px;
+  margin-bottom: 19px;
+}
+ol ol > li:before {
+  color: #838383;
+}
+ol ul > li:before {
+  content: "";
+}
+ol ul > li:last-child {
+  margin-bottom: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 35px;
+}
+table tr:first-child td {
+  text-transform: uppercase;
+  background-color: #283D4E;
+  font-family: "Elektra_Text_Pro";
+  color: #fff;
+  border-color: #283D4E;
+  border-right: 1px solid #fff;
+}
+table tr:first-child td:last-child {
+  border-right-color: #283D4E;
+}
+table td {
+  border: 1px solid #E1E1E1;
+  vertical-align: top;
+  border-top: none;
+  border-right: none;
+  padding: 13px 15px 13px 16px;
+  color: #000;
+  font-size: 14px;
+}
+table td:last-child {
+  border-right: 1px solid #E1E1E1;
+}
+table td ul {
+  margin-bottom: 5px;
+}
+table td ul li {
+  padding-left: 9px;
+  margin-bottom: 6px;
+  line-height: 16px;
+}
+table td ul li:before {
+  top: 7px;
+  width: 2px;
+  height: 2px;
+  background-color: #008FBD;
+}
+
+@font-face {
+  font-family: 'Elektra_Text_Pro';
+  src: url("../fonts/ElektraTextPro.eot");
+  src: url("../fonts/ElektraTextPro.eot?#iefix") format("embedded-opentype"), url("../fonts/ElektraTextPro.woff") format("woff"), url("../fonts/ElektraTextPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elektra_Light_Pro';
+  src: url("../fonts/ElektraLightPro.eot");
+  src: url("../fonts/ElektraLightPro.eot?#iefix") format("embedded-opentype"), url("../fonts/ElektraLightPro.woff") format("woff"), url("../fonts/ElektraLightPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elektra_Medium';
+  src: url("../fonts/ElektraMediumPro.eot");
+  src: url("../fonts/ElektraMediumPro.eot?#iefix") format("embedded-opentype"), url("../fonts/ElektraMediumPro.woff") format("woff"), url("../fonts/ElektraMediumPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */
